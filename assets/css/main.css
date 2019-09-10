@@ -393,17 +393,22 @@ body {
   margin-right: 40px;
 }
 
-.instance-box:hover::before {
+.instance-box::before {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 220px;
-  height: 80px;
+  height: 0;
   background-color: #2aacc8;
   background-image: url(../images/eye_icon.png), url(../images/link_icon.png);
   background-repeat: no-repeat, no-repeat;
   background-position: 65px, 135px;
+  transition: 0.5s;
+}
+
+.instance-box:hover::before {
+  height: 80px;
 }
 
 .instance-box__img {
