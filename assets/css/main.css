@@ -303,3 +303,109 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/******************************/
+/* LATEST WORKS SECTION */
+/******************************/
+
+.section-works {
+  padding: 20px 15px;
+  background-color: #ffffff;
+}
+
+.section-works__content-container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-works__title {
+  float: left;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 3px 0 2px 40px;
+  font-family: "Arial";
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.section-works__title::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 14px;
+  height: 24px;
+  background-image: url(../images/cursor_pointer_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-works__buttons {
+  float: right;
+  font-size: 0;
+  padding: 2px 0;
+}
+
+.works-prev-button,
+.works-next-button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #81e4ed;
+}
+
+.works-prev-button {
+  margin-right: 10px;
+  background-image: url(../images/left_arrow_bigger_height.png);
+  background-repeat: no-repeat;
+  background-position: 45% 50%;
+}
+
+.works-next-button {
+  background-image: url(../images/left_arrow_bigger_height.png);
+  background-repeat: no-repeat;
+  background-position: 45% 50%;
+  transform: rotate(180deg);
+}
+
+.section-works__instances {
+  margin-top: 15px;
+  padding-top: 19px;
+  padding-bottom: 39px;
+  border-top: 1px solid #dfe1e5;
+  border-bottom: 1px solid #dfe1e5;
+}
+
+.instance-box {
+  float:left;
+  position: relative;
+}
+
+.instance-box:not(:last-child) {
+  margin-right: 40px;
+}
+
+.instance-box:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 220px;
+  height: 80px;
+  background-color: #2aacc8;
+  background-image: url(../images/eye_icon.png), url(../images/link_icon.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 65px, 135px;
+}
+
+.instance-box__img {
+  display: block;
+}
