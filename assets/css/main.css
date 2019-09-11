@@ -9,7 +9,7 @@ body {
 }
 
 .text--bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .span--block {
@@ -455,7 +455,6 @@ body {
   margin-bottom: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
   text-align: left;
   color: #363636;
