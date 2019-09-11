@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  min-width: 1030px;
 }
 
 .clearfix::after {
@@ -602,23 +603,28 @@ body {
   margin-right: auto;
 }
 
-.footer__subsection {
+.footer__subsection-about {
   float: left;
-}
-
-.footer__subsection:not(:last-child) {
-  margin-right: 62px;
-}
-
-.footer__subsection--about {
   width: 240px;
+  margin-right: 60px;
 }
 
-.footer__subsection--contact {
+.footer__subsection-explore {
+  float: left;
+  margin-right: 70px;
+}
+
+.footer__subsection-browse {
+  float: left;
+  margin-right: 60px;
+}
+
+.footer__subsection-contact {
+  float: left;
   width: 136px;
 }
 
-.footer__subsection--connect {
+.footer__subsection-connect {
   float: right;
   width: 193px;
 }
