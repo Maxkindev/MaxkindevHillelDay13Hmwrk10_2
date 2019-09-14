@@ -459,18 +459,6 @@ body {
   background-position: center;
 }
 
-/* .overlay-link:last-child::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20x;
-  height: 26px;
-  background-image: url(../images/link_icon.png);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 /* For practice purpose*/
 /* .instance-box::before {
   content: '';
