@@ -57,6 +57,7 @@ body {
   position: relative;
 }
 
+.menu-item__block,
 .menu-item__link {
   display: block;
   width: 105px;
@@ -73,7 +74,7 @@ body {
   color: #000000;
 }
 
-.link--arrow::after {
+.block--arrow::after {
   content: url(../images/down_arrow.png);
   display: inline-block;
   position: relative;
@@ -81,12 +82,16 @@ body {
   left: 8px;
 }
 
+.navigation-menu__item:hover .menu-item__block,
 .navigation-menu__item:hover .menu-item__link {
   border-top: 5px solid #2aacc8;
   background-color: #ffffff;
   color: #2aacc8;
 }
 
+.menu-item__block {
+  cursor: default;
+}
 /******************************/
 
 .menu-item__dropdown-list {
