@@ -403,7 +403,76 @@ body {
   margin-right: 40px;
 }
 
-.instance-box::before {
+.instance-box__overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: #2aacc8;
+  transition: 0.5s;
+}
+
+.instance-box:hover .instance-box__overlay {
+  height: 80px;
+}
+
+.overlay-link {
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  left: 50px;
+  width: 35px;
+  height: 25px;
+  transform: translateY(-50%);
+}
+
+.overlay-link:first-child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 25px;
+  background-image: url(../images/eye_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay-link:last-child {
+  left: auto;
+  right: 60px;
+  width: 20px;
+  height: 26px;
+}
+
+.overlay-link:last-child::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 26px;
+  background-image: url(../images/link_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .overlay-link:last-child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20x;
+  height: 26px;
+  background-image: url(../images/link_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* For practice purpose*/
+/* .instance-box::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -419,7 +488,7 @@ body {
 
 .instance-box:hover::before {
   height: 80px;
-}
+} */
 
 .instance-box__img {
   display: block;
@@ -475,7 +544,7 @@ body {
   color: #000000;
 }
 
-.testimonials-title:before {
+.testimonials-title::before {
   content: '';
   position: absolute;
   top: 0;
@@ -487,7 +556,7 @@ body {
   background-position: center;
 }
 
-.clients-title:before {
+.clients-title::before {
   content: '';
   position: absolute;
   top: 0;
@@ -590,7 +659,7 @@ body {
   cursor: pointer;
 }
 
-.upload-button-label:before {
+.upload-button-label::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -603,7 +672,7 @@ body {
   background-position: center;
 }
 
-.upload-button-label:after {
+.upload-button-label::after {
   content: 'Download Psd';
   position: absolute;
   top: 50%;
